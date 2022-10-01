@@ -216,6 +216,102 @@ body {
   background-repeat: no-repeat;
   background-position: center; }
 
+.tini {
+  background-image: url("../images/Tini.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.turnstile {
+  background-image: url("../images/Turnstile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.ninaKravitz {
+  background-image: url("../images/Nina-kravitz.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.ohLaville {
+  background-image: url("../images/Oh-laville.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.kendrickLamar {
+  background-image: url("../images/Kendrick-lammar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.molotov {
+  background-image: url("../images/Molotov.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.metronomy {
+  background-image: url("../images/Metronomy.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.nickiNicole {
+  background-image: url("../images/Nicki-nicole.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.tameImpala {
+  background-image: url("../images/Tame-impala.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.meduza {
+  background-image: url("../images/Meduza.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.grupoNiche {
+  background-image: url("../images/Grupo-niche.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.roleModel {
+  background-image: url("../images/Role-model.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.rammstein {
+  background-image: url("../images/Rammstein.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.feid {
+  background-image: url("../images/Feid.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.megadeth {
+  background-image: url("../images/Megadeth.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.maneskin {
+  background-image: url("../images/Maneskin.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 /* End Artistas */
 /* ----------------- */
 /*    END ARTISTAS   */
@@ -341,73 +437,117 @@ body {
     left: 50px; }
 
 .experiencias {
-  margin: 50px 0px; }
-  .experiencias h1 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1279ef;
-    padding: 0 30px; }
-  .experiencias p {
-    margin-left: 10px;
-    margin-bottom: 30px;
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-    color: #444444;
-    padding: 0 30px; }
-  .experiencias a {
-    margin-left: 10px;
-    margin-bottom: 30px;
-    padding: 0 30px; }
-    .experiencias a button {
-      padding: 5px 20px;
-      border: 1px solid transparent;
-      background-color: #33a79d;
-      color: #ffffff;
-      border-radius: 5px; }
-
-.experiencia1 {
-  height: 400px;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-areas: "imagen1 texto1"; }
-  .experiencia1 .imagen1 {
-    grid-area: imagen1;
-    background-image: url("../images/gastronomia.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-  .experiencia1 .textos1 {
-    grid-area: textos1; }
-
-.experiencia2 {
-  height: 400px;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-areas: "texto2 imagen2"; }
-  .experiencia2 .imagen2 {
-    grid-area: imagen2;
-    background-image: url("../images/gastronomia.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-  .experiencia2 .textos2 {
-    grid-area: textos2; }
-
-.experiencia3 {
-  height: 400px;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-areas: "imagen3 texto3"; }
-  .experiencia3 .imagen3 {
-    grid-area: imagen3;
-    background-image: url("../images/gastronomia.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-  .experiencia3 .textos3 {
-    grid-area: textos3; }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .experiencias .experiencia1 {
+    height: auto;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: "imagen1 texto1"; }
+    .experiencias .experiencia1 .imagen1 {
+      grid-area: imagen1; }
+    .experiencias .experiencia1 .textos1 {
+      grid-area: texto1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .experiencias .experiencia1 .textos1 h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #1279ef;
+        padding: 0 30px; }
+      .experiencias .experiencia1 .textos1 p {
+        margin-left: 10px;
+        margin-bottom: 30px;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        color: #444444;
+        padding: 0 30px; }
+      .experiencias .experiencia1 .textos1 a {
+        margin-left: 10px;
+        margin-bottom: 30px;
+        padding: 0 30px; }
+        .experiencias .experiencia1 .textos1 a button {
+          padding: 5px 20px;
+          border: 1px solid transparent;
+          background-color: #33a79d;
+          color: #ffffff;
+          border-radius: 5px; }
+  .experiencias .experiencia2 {
+    height: auto;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: "texto2 imagen2"; }
+    .experiencias .experiencia2 .imagen2 {
+      grid-area: imagen2; }
+    .experiencias .experiencia2 .textos2 {
+      grid-area: texto2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .experiencias .experiencia2 .textos2 h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #1279ef;
+        padding: 0 30px; }
+      .experiencias .experiencia2 .textos2 p {
+        margin-left: 10px;
+        margin-bottom: 30px;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        color: #444444;
+        padding: 0 30px; }
+      .experiencias .experiencia2 .textos2 a {
+        margin-left: 10px;
+        margin-bottom: 30px;
+        padding: 0 30px; }
+        .experiencias .experiencia2 .textos2 a button {
+          padding: 5px 20px;
+          border: 1px solid transparent;
+          background-color: #33a79d;
+          color: #ffffff;
+          border-radius: 5px; }
+  .experiencias .experiencia3 {
+    height: auto;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: "imagen3 texto3"; }
+    .experiencias .experiencia3 .imagen3 {
+      grid-area: imagen3; }
+    .experiencias .experiencia3 .textos3 {
+      grid-area: texto3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .experiencias .experiencia3 .textos3 h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #1279ef;
+        padding: 0 30px; }
+      .experiencias .experiencia3 .textos3 p {
+        margin-left: 10px;
+        margin-bottom: 30px;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        color: #444444;
+        padding: 0 30px; }
+      .experiencias .experiencia3 .textos3 a {
+        margin-left: 10px;
+        margin-bottom: 30px;
+        padding: 0 30px; }
+        .experiencias .experiencia3 .textos3 a button {
+          padding: 5px 20px;
+          border: 1px solid transparent;
+          background-color: #33a79d;
+          color: #ffffff;
+          border-radius: 5px; }
 
 /* ----------------- */
 /*  END EXPERIENCIA  */
@@ -581,6 +721,130 @@ footer {
   .selector div {
     margin-top: 5px;
     margin-bottom: 3px; }
+  /*----------------*/
+  /*--EXPERIENCIAS--*/
+  /*----------------*/
+  .bannerExperencia {
+    height: 23vh;
+    display: flex;
+    justify-content: center; }
+    .bannerExperencia .titularExperencia {
+      bottom: 20px;
+      width: 50%;
+      left: 25%;
+      right: 25%; }
+  .experiencias {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .experiencias .experiencia1 {
+      height: auto;
+      display: grid;
+      grid-template-columns: 55% 45%;
+      grid-template-areas: "imagen1 texto1"; }
+      .experiencias .experiencia1 .imagen1 {
+        grid-area: imagen1; }
+      .experiencias .experiencia1 .textos1 {
+        grid-area: texto1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .experiencias .experiencia1 .textos1 h1 {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #1279ef;
+          padding: 0 30px; }
+        .experiencias .experiencia1 .textos1 p {
+          margin-left: 10px;
+          margin-bottom: 20px;
+          font-size: 1rem;
+          line-height: 1.3rem;
+          color: #444444;
+          padding: 0 30px; }
+        .experiencias .experiencia1 .textos1 a {
+          margin-left: 10px;
+          margin-bottom: 20px;
+          padding: 0 30px; }
+          .experiencias .experiencia1 .textos1 a button {
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            background-color: #33a79d;
+            color: #ffffff;
+            border-radius: 5px; }
+    .experiencias .experiencia2 {
+      height: auto;
+      display: grid;
+      grid-template-columns: 45% 55%;
+      grid-template-areas: "texto2 imagen2"; }
+      .experiencias .experiencia2 .imagen2 {
+        grid-area: imagen2; }
+      .experiencias .experiencia2 .textos2 {
+        grid-area: texto2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .experiencias .experiencia2 .textos2 h1 {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #1279ef;
+          padding: 0 30px; }
+        .experiencias .experiencia2 .textos2 p {
+          margin-left: 10px;
+          margin-bottom: 20px;
+          font-size: 1rem;
+          line-height: 1.3rem;
+          color: #444444;
+          padding: 0 30px; }
+        .experiencias .experiencia2 .textos2 a {
+          margin-left: 10px;
+          margin-bottom: 20px;
+          padding: 0 30px; }
+          .experiencias .experiencia2 .textos2 a button {
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            background-color: #33a79d;
+            color: #ffffff;
+            border-radius: 5px; }
+    .experiencias .experiencia3 {
+      height: auto;
+      display: grid;
+      grid-template-columns: 55% 45%;
+      grid-template-areas: "imagen3 texto3"; }
+      .experiencias .experiencia3 .imagen3 {
+        grid-area: imagen3; }
+      .experiencias .experiencia3 .textos3 {
+        grid-area: texto3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .experiencias .experiencia3 .textos3 h1 {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #1279ef;
+          padding: 0 30px; }
+        .experiencias .experiencia3 .textos3 p {
+          margin-left: 10px;
+          margin-bottom: 20px;
+          font-size: 1rem;
+          line-height: 1.3rem;
+          color: #444444;
+          padding: 0 30px; }
+        .experiencias .experiencia3 .textos3 a {
+          margin-left: 10px;
+          margin-bottom: 20px;
+          padding: 0 30px; }
+          .experiencias .experiencia3 .textos3 a button {
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            background-color: #33a79d;
+            color: #ffffff;
+            border-radius: 5px; }
   /* ---------------- */
   /* ----ENTRADAS---- */
   /* ---------------- */
@@ -722,6 +986,123 @@ footer {
       font-size: 1.1rem; }
     .cadaArtista div P {
       font-size: 0.8rem; }
+  /*----------------*/
+  /*--EXPERIENCIAS--*/
+  /*----------------*/
+  .experiencias {
+    margin: 0px 0px;
+    flex-direction: column; }
+    .experiencias .experiencia1 {
+      height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "texto1"  "imagen1"; }
+      .experiencias .experiencia1 .textos1 {
+        grid-area: texto1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px; }
+        .experiencias .experiencia1 .textos1 h1 {
+          margin-top: 0px;
+          margin-bottom: 20px;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #1279ef;
+          padding: 0 20px; }
+        .experiencias .experiencia1 .textos1 p {
+          margin-bottom: 30px;
+          font-size: 1rem;
+          line-height: 1.3rem;
+          color: #444444;
+          padding: 0 20px;
+          text-align: center; }
+        .experiencias .experiencia1 .textos1 a {
+          margin-left: 0px;
+          margin-bottom: 0px;
+          padding: 0 30px; }
+          .experiencias .experiencia1 .textos1 a button {
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            background-color: #33a79d;
+            color: #ffffff;
+            border-radius: 5px; }
+    .experiencias .experiencia2 {
+      height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "texto2" "imagen2"; }
+      .experiencias .experiencia2 .textos2 {
+        grid-area: texto2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px; }
+        .experiencias .experiencia2 .textos2 h1 {
+          margin-top: 0px;
+          margin-bottom: 20px;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #1279ef;
+          padding: 0 20px; }
+        .experiencias .experiencia2 .textos2 p {
+          margin-bottom: 30px;
+          font-size: 1rem;
+          line-height: 1.3rem;
+          color: #444444;
+          padding: 0 20px;
+          text-align: center; }
+        .experiencias .experiencia2 .textos2 a {
+          margin-left: 0px;
+          margin-bottom: 0px;
+          padding: 0 30px; }
+          .experiencias .experiencia2 .textos2 a button {
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            background-color: #33a79d;
+            color: #ffffff;
+            border-radius: 5px; }
+    .experiencias .experiencia3 {
+      height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "texto3" "imagen3"; }
+      .experiencias .experiencia3 .textos3 {
+        grid-area: texto3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px; }
+        .experiencias .experiencia3 .textos3 h1 {
+          margin-top: 0px;
+          margin-bottom: 20px;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #1279ef;
+          padding: 0 20px; }
+        .experiencias .experiencia3 .textos3 p {
+          margin-bottom: 30px;
+          font-size: 1rem;
+          line-height: 1.3rem;
+          color: #444444;
+          padding: 0 20px;
+          text-align: center; }
+        .experiencias .experiencia3 .textos3 a {
+          margin-left: 0px;
+          margin-bottom: 0px;
+          padding: 0 30px; }
+          .experiencias .experiencia3 .textos3 a button {
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            background-color: #33a79d;
+            color: #ffffff;
+            border-radius: 5px; }
   /*----------------*/
   /*----ENTRADAS----*/
   /*----------------*/

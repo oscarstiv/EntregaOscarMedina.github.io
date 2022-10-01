@@ -64,6 +64,161 @@
         }
     }
 
+    /*----------------*/
+    /*--EXPERIENCIAS--*/
+    /*----------------*/
+
+    .bannerExperencia{
+        height: 23vh;
+        display: flex;
+        justify-content: center;
+        .titularExperencia{
+            bottom: 20px;
+            width: 50%;
+            left: 25%;
+            right: 25%;
+        }
+    }
+
+    .experiencias{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .experiencia1{
+            height: auto;
+            display: grid;
+            grid-template-columns: 55% 45%;
+            grid-template-areas: 
+            "imagen1 texto1";
+            .imagen1{
+                grid-area: imagen1;
+            }
+            .textos1{
+                grid-area: texto1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h1{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: nth($colores,4);
+                    padding: 0 30px;
+                }
+                p{
+                    margin-left: 10px;
+                    margin-bottom: 20px;
+                    font-size: 1rem;
+                    line-height: 1.3rem;
+                    color: nth($colores,2);
+                    padding: 0 30px;
+                }
+                a{
+                    margin-left: 10px;
+                    margin-bottom: 20px;
+                    padding: 0 30px;
+                    button{
+                        padding: 5px 20px;
+                        border: 1px solid transparent;
+                        background-color:nth($colores,6);
+                        color: nth($colores,1);
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        .experiencia2{
+            height: auto;
+            display: grid;
+            grid-template-columns: 45% 55%;
+            grid-template-areas: 
+            "texto2 imagen2";
+            .imagen2{
+                grid-area: imagen2;
+                
+            }
+            .textos2{
+                grid-area: texto2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h1{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: nth($colores,4);
+                    padding: 0 30px;
+                }
+                p{
+                    margin-left: 10px;
+                    margin-bottom: 20px;
+                    font-size: 1rem;
+                    line-height: 1.3rem;
+                    color: nth($colores,2);
+                    padding: 0 30px;
+                }
+                a{
+                    margin-left: 10px;
+                    margin-bottom: 20px;
+                    padding: 0 30px;
+                    button{
+                        padding: 5px 20px;
+                        border: 1px solid transparent;
+                        background-color:nth($colores,6);
+                        color: nth($colores,1);
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        .experiencia3{
+            height: auto;
+            display: grid;
+            grid-template-columns: 55% 45%;
+            grid-template-areas: 
+            "imagen3 texto3";
+            .imagen3{
+                grid-area: imagen3;
+            }
+            .textos3{
+                grid-area: texto3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h1{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: nth($colores,4);
+                    padding: 0 30px;
+                }
+                p{
+                    margin-left: 10px;
+                    margin-bottom: 20px;
+                    font-size: 1rem;
+                    line-height: 1.3rem;
+                    color: nth($colores,2);
+                    padding: 0 30px;
+                }
+                a{
+                    margin-left: 10px;
+                    margin-bottom: 20px;
+                    padding: 0 30px;
+                    button{
+                        padding: 5px 20px;
+                        border: 1px solid transparent;
+                        background-color:nth($colores,6);
+                        color: nth($colores,1);
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
     /* ---------------- */
     /* ----ENTRADAS---- */
     /* ---------------- */
