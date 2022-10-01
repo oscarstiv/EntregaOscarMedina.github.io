@@ -169,145 +169,145 @@ body {
 
 /* Artistas */
 .slipknot {
-  background-image: url("../images/Slipknot.png");
+  background-image: url("../images/Slipknot.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .royalBlood {
-  background-image: url("../images/Royal-blood.png");
+  background-image: url("../images/Royal-blood.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .theWeeknd {
-  background-image: url("../images/The-weeknd.png");
+  background-image: url("../images/The-weeknd.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .daftPunk {
-  background-image: url("../images/Daft-punk.png");
+  background-image: url("../images/Daft-punk.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .mileyCirus {
-  background-image: url("../images/Miley-cirus.png");
+  background-image: url("../images/Miley-cirus.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .cuartetoNos {
-  background-image: url("../images/El-cuarteto-de-nos.png");
+  background-image: url("../images/El-cuarteto-de-nos.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .joji {
-  background-image: url("../images/Joji.png");
+  background-image: url("../images/Joji.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .twentyOnePilots {
-  background-image: url("../images/Twenty-one-pilots.png");
+  background-image: url("../images/Twenty-one-pilots.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .tini {
-  background-image: url("../images/Tini.png");
+  background-image: url("../images/Tini.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .turnstile {
-  background-image: url("../images/Turnstile.png");
+  background-image: url("../images/Turnstile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .ninaKravitz {
-  background-image: url("../images/Nina-kravitz.png");
+  background-image: url("../images/Nina-kravitz.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .ohLaville {
-  background-image: url("../images/Oh-laville.png");
+  background-image: url("../images/Oh-laville.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .kendrickLamar {
-  background-image: url("../images/Kendrick-lammar.png");
+  background-image: url("../images/Kendrick-lammar.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .molotov {
-  background-image: url("../images/Molotov.png");
+  background-image: url("../images/Molotov.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .metronomy {
-  background-image: url("../images/Metronomy.png");
+  background-image: url("../images/Metronomy.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .nickiNicole {
-  background-image: url("../images/Nicki-nicole.png");
+  background-image: url("../images/Nicki-nicole.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .tameImpala {
-  background-image: url("../images/Tame-impala.png");
+  background-image: url("../images/Tame-impala.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .meduza {
-  background-image: url("../images/Meduza.png");
+  background-image: url("../images/Meduza.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .grupoNiche {
-  background-image: url("../images/Grupo-niche.png");
+  background-image: url("../images/Grupo-niche.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .roleModel {
-  background-image: url("../images/Role-model.png");
+  background-image: url("../images/Role-model.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .rammstein {
-  background-image: url("../images/Rammstein.png");
+  background-image: url("../images/Rammstein.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .feid {
-  background-image: url("../images/Feid.png");
+  background-image: url("../images/Feid.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .megadeth {
-  background-image: url("../images/Megadeth.png");
+  background-image: url("../images/Megadeth.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .maneskin {
-  background-image: url("../images/Maneskin.png");
+  background-image: url("../images/Maneskin.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -329,11 +329,13 @@ body {
 .entradas h1 {
   font-family: "Rakkas", cursive;
   color: #1279ef;
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-align: center; }
 
 .entradas p {
   color: #444444;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: center; }
 
 .entradas .entradasPrecios {
   display: flex;
@@ -730,9 +732,8 @@ footer {
     justify-content: center; }
     .bannerExperencia .titularExperencia {
       bottom: 20px;
-      width: 50%;
-      left: 25%;
-      right: 25%; }
+      width: 70%;
+      left: 16%; }
   .experiencias {
     display: flex;
     flex-wrap: wrap;
