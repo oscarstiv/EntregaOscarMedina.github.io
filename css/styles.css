@@ -1,102 +1,71 @@
-:root{
-    --Tipografia-festival:'Rakkas', cursive;
-    --Color-blanco: #ffffff;
-    --Color-negro: #444444;
-    --Color-fondo: #fbf6f0;
-    --color-azul:#1279ef;
-    --Color-azulOscuro:#1b1b5c;
-    --Color-verde: #33a79d;
-}
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
-/* reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-body{
-    background-color: var(--Color-fondo);
-}
+body {
+  background-color: #fbf6f0; }
 
 /* Navbar */
-.header{
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 940px;
-    display: flex;
-    justify-content: center;
-}
-
-.header .navbar{
+.header {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+  display: flex;
+  justify-content: center; }
+  .header .navbar {
     border-radius: 5px;
-    background-color: var(--Color-blanco);
+    background-color: #ffffff;
     border: 1px solid transparent;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.32);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.32);
     position: fixed;
-    z-index: 1000;
-}
-
-.header .navbar img{
-    margin-right: 250px;
-}
-.header .navbar .nav-link{
-    transition: 0.3s;
-}
-.header .navbar .nav-link:hover{
-    color: var(--color-azul);
-    text-decoration: underline;
-}
+    z-index: 1000; }
+    .header .navbar img {
+      margin-right: 250px; }
+    .header .navbar .nav-link {
+      transition: 0.3s; }
+      .header .navbar .nav-link:hover {
+        color: #1279ef;
+        text-decoration: underline; }
 
 /* Lista de Iconos */
-
-.listaIconos{
-    position: absolute;
-    top: 45%;
-    left: -3%;
-    display: block;
-}
-
-.listaIconos ul li{
+.listaIconos {
+  position: absolute;
+  top: 45%;
+  left: -3%;
+  display: block; }
+  .listaIconos ul li {
     list-style: none;
     margin-bottom: 15px;
-    transition: 0.3s;
-}
+    transition: 0.3s; }
+    .listaIconos ul li:hover {
+      transform: scale(1.5, 1.5);
+      cursor: pointer; }
+    .listaIconos ul li img {
+      width: 20%; }
 
-.listaIconos ul li:hover{
-    transform: scale(1.5,1.5);
-    cursor: pointer;
-}
-
-.listaIconos ul li img{
-    width: 20%;
-}
-
-/* ----------------- */
-/*      INDEX        */
-/* ----------------- */
-
+/*---------------*/
+/*---- INDEX ----*/
+/*---------------*/
 /* Primera Seccion */
-.intro{
-    height: 130vh;
-    background-color: var(--color-azul);
-    margin-top: -10px;
-}
-.intro img{
-    margin-top: 15%;
-}
-.intro h2{
+.intro {
+  height: 130vh;
+  background-color: #1279ef;
+  margin-top: -10px; }
+  .intro img {
+    margin-top: 15%; }
+  .intro h2 {
     margin-top: 3%;
     font-size: 3rem;
     line-height: 3.2rem;
-    font-family: var(--Tipografia-festival);
-    color: var(--Color-blanco);
-}
-.intro button{
-    color: var(--Color-blanco);
-    background-color: var(--Color-verde);
+    font-family: "Rakkas", cursive;
+    color: #ffffff; }
+  .intro button {
+    color: #ffffff;
+    background-color: #33a79d;
     padding: 10px 30px;
     border-radius: 10px;
     border: 1px solid transparent;
@@ -104,420 +73,236 @@ body{
     animation-name: mover;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    transition: 0.3s;
-}
-.intro button:hover{
-    color: var(--Color-verde);
-    background-color: var(--Color-blanco);
-    border: 1px solid var(--Color-verde);
-}
+    transition: 0.3s; }
+    .intro button:hover {
+      color: #33a79d;
+      background-color: #ffffff;
+      border: 1px solid #33a79d; }
 
-@keyframes mover{
-    0%{
-        transform: translateY(0);
-    }
-
-    50%{
-        transform: translateY(10px);
-    }
-
-    100%{
-        transform: translateY(0);
-    }
-}
-
-.intro .hastag{
-    color: var(--Color-blanco);
+@keyframes mover {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0); } }
+  .intro .hastag {
+    color: #ffffff;
     font-size: 3rem;
-    font-family: var(--Tipografia-festival);
-    margin-top: 12%;
-}
+    font-family: "Rakkas", cursive;
+    margin-top: 12%; }
 
 /* Segunda Seccion */
-
-.lineup{
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.lineup h1{
+.lineup {
+  margin-bottom: 30px;
+  margin-top: 30px; }
+  .lineup h1 {
     margin: 30px 20px;
     font-size: 5rem;
-    font-family: var(--Tipografia-festival);
-}
-
-.lineup .carrusel{
-    margin: 30px 0px;
-}
-
-.lineup .carrusel h2{
-    font-size: 4rem;
-    margin-top: 30px;
-    margin-left: 10px;
-    font-family: var(--Tipografia-festival);
-}
-.lineup .carrusel h3{
-    font-size: 3rem;
-    margin-left: 10px;
-    font-family: var(--Tipografia-festival);
-}
+    font-family: "Rakkas", cursive; }
+  .lineup .carrusel {
+    margin: 30px 0px; }
+    .lineup .carrusel h2 {
+      font-size: 4rem;
+      margin-top: 30px;
+      margin-left: 10px;
+      font-family: "Rakkas", cursive; }
+    .lineup .carrusel h3 {
+      font-size: 3rem;
+      margin-left: 10px;
+      font-family: "Rakkas", cursive; }
 
 /* ----------------- */
-/*     END INDEX     */
+/* ----END INDEX---- */
 /* ----------------- */
-
-
-/* ----------------- */
-/*     ARTISTAS      */
-/* ----------------- */
-
-.bannerArtistas{
-    height: 40vh;
-    background-image: url("../images/banner-artistas.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -10px;
-    position: relative;
-}
-
-.bannerArtistas .titularArtistas{
+/* ---------------- */
+/* ----ARTISTAS---- */
+/* ---------------- */
+.bannerArtistas {
+  height: 40vh;
+  background-image: url("../images/banner-artistas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -10px;
+  position: relative; }
+  .bannerArtistas .titularArtistas {
     position: absolute;
     bottom: 20px;
-    left: 50px;
-}
+    left: 50px; }
 
-.selector{
-    background-color: var(--color-azul);
-    color: var(--Color-blanco);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
+.selector {
+  background-color: #1279ef;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center; }
 
-.artistas{
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-}
+.artistas {
+  display: grid;
+  grid-template-columns: repeat(4, 25%); }
 
-.cadaArtista{
-    width: 100%;
-    height: 342px;
-    position: relative;
-}
-
-.cadaArtista div{
+.cadaArtista {
+  width: 100%;
+  height: 342px;
+  position: relative; }
+  .cadaArtista div {
     background-color: #000000ca;
     position: absolute;
     bottom: 0;
     width: 80%;
-    border-radius: 0px 30px 0px 0px;
-}
-
-.cadaArtista div:hover{
-    height: 100px;
-    cursor: pointer;
-}
-
-.cadaArtista div h3{
-    color: var(--Color-blanco);
-    margin: 0px 20px;
-    margin-top: 20px;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.cadaArtista div p{
-    color: var(--Color-blanco);
-    margin: 0px 20px;
-    margin-bottom: 20px;
-    font-size: 0.8rem;
-}
-
+    border-radius: 0px 30px 0px 0px; }
+    .cadaArtista div:hover {
+      height: 100px;
+      cursor: pointer; }
+    .cadaArtista div h3 {
+      color: #ffffff;
+      margin: 0px 20px;
+      margin-top: 20px;
+      font-size: 1.3rem;
+      font-weight: bold; }
+    .cadaArtista div p {
+      color: #ffffff;
+      margin: 0px 20px;
+      margin-bottom: 20px;
+      font-size: 0.8rem; }
 
 /* Artistas */
-.slipknot{
-    background-image: url("../images/Slipknot.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.slipknot {
+  background-image: url("../images/Slipknot.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.royalBlood{
-    background-image: url("../images/Royal-blood.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.royalBlood {
+  background-image: url("../images/Royal-blood.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.theWeeknd{
-    background-image: url("../images/The-weeknd.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.theWeeknd {
+  background-image: url("../images/The-weeknd.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.daftPunk{
-    background-image: url("../images/Daft-punk.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.daftPunk {
+  background-image: url("../images/Daft-punk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.mileyCirus{
-    background-image: url("../images/Miley-cirus.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.mileyCirus {
+  background-image: url("../images/Miley-cirus.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.cuartetoNos{
-    background-image: url("../images/El-cuarteto-de-nos.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.cuartetoNos {
+  background-image: url("../images/El-cuarteto-de-nos.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.joji{
-    background-image: url("../images/Joji.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.joji {
+  background-image: url("../images/Joji.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.twentyOnePilots{
-    background-image: url("../images/Twenty-one-pilots.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.twentyOnePilots {
+  background-image: url("../images/Twenty-one-pilots.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 /* End Artistas */
-
-
 /* ----------------- */
 /*    END ARTISTAS   */
 /* ----------------- */
+/* ------------------ */
+/* -----ENTRADAS----- */
+/* ------------------ */
+.introEntradas img {
+  margin-top: 35%;
+  margin-bottom: 50px; }
 
-/* ----------------- */
-/*    EXPERIENCIA    */
-/* ----------------- */
+.entradas hr {
+  margin-bottom: 50px; }
 
-.bannerExperencia{
-    height: 40vh;
-    background-image: url("../images/banner-experiencia.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -10px;
-    position: relative;
-}
+.entradas h1 {
+  font-family: "Rakkas", cursive;
+  color: #1279ef;
+  font-size: 2rem; }
 
-.bannerExperencia .titularExperencia{
-    position: absolute;
-    bottom: 20px;
-    left: 50px;
-}
+.entradas p {
+  color: #444444;
+  font-size: 1.2rem; }
 
-.experiencias{
-    margin: 50px 0px;
-}
-
-.experiencias h1{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--color-azul);
-    padding: 0 30px;
-}
-
-.experiencias p{
-    margin-left: 10px;
-    margin-bottom: 30px;
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-    color: var(--Color-negro);
-    padding: 0 30px;
-}
-
-.experiencias a{
-    margin-left: 10px;
-    margin-bottom: 30px;
-    padding: 0 30px;
-}
-
-.experiencias a button{
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    background-color: var(--Color-verde);
-    color: var(--Color-blanco);
-    border-radius: 5px;
-}
-
-.experiencia1{
-    height: 400px;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-areas: 
-    "imagen1 texto1";
-}
-
-.experiencia1 .imagen1{
-    grid-area: imagen1;
-    background-image: url("../images/gastronomia.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.experiencia1 .textos1{
-    grid-area: textos1;
-}
-
-.experiencia2{
-    height: 400px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: 
-    "texto2 imagen2";
-}
-
-.experiencia2 .imagen2{
-    grid-area: imagen2;
-    background-image: url("../images/gastronomia.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.experiencia2 .textos2{
-    grid-area: textos2;
-}
-
-.experiencia3{
-    height: 400px;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-areas: 
-    "imagen3 texto3";
-}
-
-.experiencia3 .imagen3{
-    grid-area: imagen3;
-    background-image: url("../images/gastronomia.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.experiencia3 .textos3{
-    grid-area: textos3;
-}
-
-
-/* ----------------- */
-/*  END EXPERIENCIA  */
-/* ----------------- */
-
-
-/* ----------------- */
-/*      ENTRADAS     */
-/* ----------------- */
-
-.introEntradas img{
-    margin-top: 35%;
-    margin-bottom: 50px;
-}
-.entradas hr{
-    margin-bottom: 50px;
-}
-.entradas h1{
-    font-family: var(--Tipografia-festival);
-    color: var(--color-azul);
-    font-size: 2rem;
-}
-.entradas p{
-    color: var(--Color-negro);
-    font-size: 1.2rem;
-}
-.entradasPrecios{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
-.generalIndividual{
+.entradas .entradasPrecios {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  /* Estilos corte de boletas*/
+  /* End estilos corte de boletas*/ }
+  .entradas .entradasPrecios .generalIndividual {
     width: 90%;
     max-width: 470px;
-    background-color: var(--Color-blanco);
+    background-color: #ffffff;
     padding: 0px 20px;
     border-radius: 20px 20px 0px 0px;
-    margin-top: 50px;
-}
-.generalIndividual .contenedorCodigo{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-/* Estilos corte de boletas*/
-.imgBoleta{
+    margin-top: 50px; }
+    .entradas .entradasPrecios .generalIndividual h2 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 2.5rem;
+      font-family: "Rakkas", cursive; }
+    .entradas .entradasPrecios .generalIndividual p {
+      border-bottom: 2px solid;
+      font-size: 2rem;
+      padding: 15px 0; }
+    .entradas .entradasPrecios .generalIndividual .boleta {
+      display: flex;
+      align-items: center;
+      color: #1b1b5c;
+      /* Usar Class="agotado" para aplicar este estilo  */ }
+      .entradas .entradasPrecios .generalIndividual .boleta .etapa {
+        width: 25%;
+        text-align: center; }
+      .entradas .entradasPrecios .generalIndividual .boleta .precio {
+        width: 75%;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #1279ef; }
+      .entradas .entradasPrecios .generalIndividual .boleta .agotado {
+        width: 75%;
+        font-size: 1.5rem;
+        text-align: center;
+        font-style: italic;
+        background-color: #1279ef;
+        color: #ffffff; }
+    .entradas .entradasPrecios .generalIndividual .contenedorCodigo {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      margin-bottom: 50px; }
+  .entradas .entradasPrecios .imgBoleta {
     width: 90%;
     max-width: 470px;
-    margin-bottom: 50px;
-    
-}
-.imgBoleta .contenedorBoleta{
-    display: flex;
-    justify-content: center;
-    
-}
-/* End estilos corte de boletas*/
-.entradasPrecios h2{
-    text-align: center;
-    margin-top: 30px;
-    font-size: 2.5rem;
-    font-family: var(--Tipografia-festival);
-}
-.entradasPrecios p{
-    border-bottom: 2px solid;
-    font-size: 2rem;
-    padding: 15px 0;
-}
-.entradasPrecios .boleta{
-    display: flex;
-    align-items: center;
-    color: var(--Color-azulOscuro);
-}
-.entradasPrecios .boleta .etapa{
-    width: 25%;
-    text-align: center;
-}
-.entradasPrecios .boleta .precio{
-    width: 75%;
-    font-size: 1.5rem;
-    text-align: center;
-    color: var(--color-azul);
-}
-/* Usar Class="agotado" para aplicar este estilo  */
-.entradasPrecios .boleta .agotado{
-    width: 75%;
-    font-size: 1.5rem;
-    text-align: center;
-    font-style: italic;
-    background-color: var(--color-azul);
-    color: var(--Color-blanco);
-}
-.entradas .legales{
-    text-align: center;
-}
-.entradas a{
-    text-decoration: none;
-}
-.entradas a .comprar{
-    background: var(--Color-verde);
-    color: var(--Color-blanco);
+    margin-bottom: 50px; }
+    .entradas .entradasPrecios .imgBoleta .contenedorBoleta {
+      display: flex;
+      justify-content: center; }
+
+.entradas .legales {
+  text-align: center; }
+
+.entradas a {
+  text-decoration: none; }
+  .entradas a .comprar {
+    background: #33a79d;
+    color: #ffffff;
     padding: 5px 30px;
     border: 2px solid transparent;
     border-radius: 13px;
@@ -527,658 +312,505 @@ body{
     margin: 0 auto;
     display: block;
     margin-bottom: 50px;
-    transition: 0.3s;
-}
+    transition: 0.3s; }
+    .entradas a .comprar:hover {
+      transform: scale(1.1, 1.1);
+      background: #ffffff;
+      color: #33a79d;
+      padding: 5px 30px;
+      border: 2px solid #33a79d;
+      cursor: pointer; }
 
-.entradas a .comprar:hover{
-    transform: scale(1.1,1.1);
-    background: var(--Color-blanco);
-    color: var(--Color-verde);
-    padding: 5px 30px;
-    border: 2px solid var(--Color-verde);
-    cursor: pointer;
-}
+/* ------------------ */
+/* ---END ENTRADAS--- */
+/* ------------------ */
 /* ----------------- */
-/*    END ENTRADAS   */
+/*    EXPERIENCIA    */
 /* ----------------- */
+.bannerExperencia {
+  height: 40vh;
+  background-image: url("../images/banner-experiencia.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -10px;
+  position: relative; }
+  .bannerExperencia .titularExperencia {
+    position: absolute;
+    bottom: 20px;
+    left: 50px; }
 
-/* ----------------- */
-/*       FAQS        */
-/* ----------------- */
-
-.introFaqs img{
-    margin-top: 15%;
+.experiencias {
+  margin: 50px 0px; }
+  .experiencias h1 {
+    margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.seccionPreguntas{
-    background-color: var(--Color-blanco);
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.preguntas{
-    margin: 30px 0px;
-}
-
-.preguntas .accordion-item{
-    margin: 30px 0px;
-}
-
-.preguntas .accordion-item h2 button{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
-}
+    color: #1279ef;
+    padding: 0 30px; }
+  .experiencias p {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    color: #444444;
+    padding: 0 30px; }
+  .experiencias a {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    padding: 0 30px; }
+    .experiencias a button {
+      padding: 5px 20px;
+      border: 1px solid transparent;
+      background-color: #33a79d;
+      color: #ffffff;
+      border-radius: 5px; }
 
-.seccionContacto{
-    background-image: url("../images/background-contacto.png");
-    background-size: contain;
+.experiencia1 {
+  height: 400px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "imagen1 texto1"; }
+  .experiencia1 .imagen1 {
+    grid-area: imagen1;
+    background-image: url("../images/gastronomia.jpg");
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 445px;
-    padding-top: 55px;
-    width: 100%;
-    margin-bottom: 100px;
-}
+    background-repeat: no-repeat; }
+  .experiencia1 .textos1 {
+    grid-area: textos1; }
 
-.contacto{
+.experiencia2 {
+  height: 400px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "texto2 imagen2"; }
+  .experiencia2 .imagen2 {
+    grid-area: imagen2;
+    background-image: url("../images/gastronomia.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .experiencia2 .textos2 {
+    grid-area: textos2; }
+
+.experiencia3 {
+  height: 400px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "imagen3 texto3"; }
+  .experiencia3 .imagen3 {
+    grid-area: imagen3;
+    background-image: url("../images/gastronomia.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .experiencia3 .textos3 {
+    grid-area: textos3; }
+
+/* ----------------- */
+/*  END EXPERIENCIA  */
+/* ----------------- */
+/* ---------------- */
+/* ------FAQS------ */
+/* ---------------- */
+.introFaqs img {
+  margin-top: 15%;
+  margin-bottom: 30px; }
+
+.seccionPreguntas {
+  background-color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .seccionPreguntas .preguntas {
+    margin: 30px 0px; }
+  .seccionPreguntas .accordion-item {
+    margin: 30px 0px; }
+    .seccionPreguntas .accordion-item h2 button {
+      font-size: 1.8rem;
+      font-weight: bold; }
+
+.seccionContacto {
+  background-image: url("../images/background-contacto.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 445px;
+  padding-top: 55px;
+  width: 100%;
+  margin-bottom: 100px; }
+  .seccionContacto .contacto {
     padding-top: 0px;
     padding-left: 68px;
-    padding-right: 50px;
-}
-
-.contacto h1{
-    font-family: var(--Tipografia-festival);
-    font-size: 3rem;
-    color: var(--Color-azulOscuro);
-}
-
-.contacto p{
-    font-size: 1rem;
-    color: var(--Color-azulOscuro);
-}
-
-.contacto form label{
-    margin-bottom: 2px;
-    font-size: 0.8rem;
-    color: var(--Color-azulOscuro);
-}
-
-.contacto form button{
-    background: var(--Color-verde);
-    border: 1px solid transparent;
-    float: right;
-    color: var(--Color-blanco);
-    border-radius: 0;
-    font-size: 1.3rem;
-    padding: 5px 30px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.contacto form button:hover{
-    transform: rotate(10deg);
-    cursor: pointer;
-}
-
-.newletter{
+    padding-right: 50px; }
+    .seccionContacto .contacto h1 {
+      font-family: "Rakkas", cursive;
+      font-size: 3rem;
+      color: #1b1b5c; }
+    .seccionContacto .contacto p {
+      font-size: 1rem;
+      color: #1b1b5c; }
+    .seccionContacto .contacto form label {
+      margin-bottom: 2px;
+      font-size: 0.8rem;
+      color: #1b1b5c; }
+    .seccionContacto .contacto form button {
+      background: #33a79d;
+      border: 1px solid transparent;
+      float: right;
+      color: #ffffff;
+      border-radius: 0;
+      font-size: 1.3rem;
+      padding: 5px 30px;
+      border-radius: 5px;
+      transition: 0.3s; }
+      .seccionContacto .contacto form button:hover {
+        transform: rotate(10deg);
+        cursor: pointer; }
+  .seccionContacto .newletter {
     padding: 25px 50px 10px;
-    color: var(--Color-blanco);
-}
+    color: #ffffff; }
+    .seccionContacto .newletter h1 {
+      font-family: "Rakkas", cursive;
+      font-size: 3rem; }
+    .seccionContacto .newletter p {
+      font-size: 1rem; }
+    .seccionContacto .newletter form label {
+      margin-bottom: 2px;
+      font-size: 0.8rem; }
+    .seccionContacto .newletter form button {
+      background: #1b1b5c;
+      border: 1px solid transparent;
+      float: right;
+      margin-top: 15px;
+      color: #ffffff;
+      border-radius: 0;
+      font-size: 1.3rem;
+      padding: 5px 20px;
+      border-radius: 5px;
+      transition: 0.3s; }
+      .seccionContacto .newletter form button:hover {
+        transform: rotate(10deg);
+        cursor: pointer; }
 
-.newletter h1{
-    font-family: var(--Tipografia-festival);
-    font-size: 3rem;
-}
-.newletter p{
-    font-size: 1rem;
-}
-
-.newletter form label{
-    margin-bottom: 2px;
-    font-size: 0.8rem;
-}
-
-.newletter form button{
-    background: var(--Color-azulOscuro);
-    border: 1px solid transparent;
-    float: right;
-    margin-top: 15px;
-    color: var(--color-blanco);
-    border-radius: 0;
-    font-size: 1.3rem;
-    padding: 5px 20px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.newletter form button:hover{
-    transform: rotate(10deg);
-    cursor: pointer;
-}
-
-/* ----------------- */
-/*     END FAQS      */
-/* ----------------- */
-
+/* ------------------ */
+/* -----END FAQS----- */
+/* ------------------ */
 /* -------------- */
-/* ----Footer---- */
+/* ----FOOTER---- */
 /* -------------- */
-
-footer{
-    background-color: var(--Color-azulOscuro);
-    color: var(--Color-blanco);
-    padding:30px 0px;
-}
-
-footer ul{
-    padding-left: 0px;
-}
-
-footer ul li{
-    list-style: none;
-    font-size: 1rem;
-}
-
-footer .iconos{
-   display: flex;
-   flex-direction: column;
-   justify-content: end;
-}
-
-footer .iconos p{
-    text-align: end;
-    margin-bottom: 0px;
-    font-size: 1rem;
-}
-
-footer .iconos ul{
+footer {
+  background-color: #1b1b5c;
+  color: #ffffff;
+  padding: 30px 0px; }
+  footer ul {
+    padding-left: 0px; }
+    footer ul li {
+      list-style: none;
+      font-size: 1rem; }
+  footer .iconos {
     display: flex;
-    gap: 12px;
-    padding: 0%;
-}
+    flex-direction: column;
+    justify-content: end; }
+    footer .iconos p {
+      text-align: end;
+      margin-bottom: 0px;
+      font-size: 1rem; }
+    footer .iconos ul {
+      display: flex;
+      gap: 12px;
+      padding: 0%; }
+  footer .derechos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    footer .derechos img {
+      width: 15%; }
+    footer .derechos button {
+      font-size: 1rem;
+      color: #ffffff;
+      background-color: #33a79d;
+      padding: 5px 40px;
+      border-radius: 5px;
+      border: 1px solid transparent; }
+      footer .derechos button:hover {
+        color: #33a79d;
+        background-color: #ffffff;
+        border: 1px solid #33a79d; }
 
-footer .derechos{
+@media (max-width: 810px) {
+  /*Navbar*/
+  .header .navbar img {
+    margin-right: 400px; }
+  /*Iconos*/
+  .listaIconos {
+    position: absolute;
+    top: 25%;
+    left: -6%;
+    display: block; }
+  /* --------------- */
+  /* -----INDEX----- */
+  /* --------------- */
+  /* Primera Seccion */
+  .intro {
+    height: 65vh;
+    background-color: #1279ef;
+    margin-top: -10px; }
+    .intro img {
+      margin-top: 25%; }
+  /* ---------------- */
+  /* ----ARTISTAS---- */
+  /* ---------------- */
+  .bannerArtistas {
+    height: 23vh;
+    background-color: #444444;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center; }
+    .bannerArtistas .titularArtistas {
+      bottom: 20px;
+      width: 50%;
+      left: 25%;
+      right: 25%; }
+  .artistas {
+    display: grid;
+    grid-template-columns: repeat(3, 33%); }
+  .cadaArtista {
+    height: 25vh; }
+  .selector div {
+    margin-top: 5px;
+    margin-bottom: 3px; }
+  /* ---------------- */
+  /* ----ENTRADAS---- */
+  /* ---------------- */
+  .entradas .entradasPrecios {
+    flex-direction: row; }
+    .entradas .entradasPrecios .generalIndividual {
+      margin: 30px 30px 30px 10px; }
+      .entradas .entradasPrecios .generalIndividual h2 {
+        margin-top: 15px;
+        font-size: 2rem; }
+      .entradas .entradasPrecios .generalIndividual .boleta .etapa {
+        width: 30%;
+        text-align: center;
+        font-size: 1.2rem; }
+      .entradas .entradasPrecios .generalIndividual .boleta .precio {
+        width: 70%;
+        font-size: 1rem; }
+      .entradas .entradasPrecios .generalIndividual .boleta .agotado {
+        width: 70%;
+        font-size: 1.2rem; }
+      .entradas .entradasPrecios .generalIndividual .contenedorCodigo {
+        margin-top: 0px;
+        margin-bottom: 20px; }
+    .entradas .entradasPrecios .imgBoleta .contenedorBoleta {
+      display: none; }
+  /* ----------------- */
+  /* ------FAQ'S------ */
+  /* ----------------- */
+  .introFaqs img {
+    margin-top: 20%;
+    margin-bottom: 20px; }
+  .seccionPreguntas {
+    background-color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .seccionPreguntas .preguntas {
+      margin: 20px 0px; }
+      .seccionPreguntas .preguntas .accordion-item {
+        margin: 20px 0px; }
+        .seccionPreguntas .preguntas .accordion-item h2 button {
+          font-size: 1.3rem;
+          font-weight: bold; }
+  .seccionContacto-celular {
+    padding-top: 50px;
+    width: 100%;
+    margin-bottom: 50px; }
+    .seccionContacto-celular .contactoCelular {
+      padding-top: 45px;
+      padding-left: 50px;
+      padding-right: 50px;
+      background: url("../images/background-contacto-celular.svg");
+      background-size: cover; }
+      .seccionContacto-celular .contactoCelular h1 {
+        font-family: "Rakkas", cursive;
+        font-size: 3rem;
+        color: #1b1b5c; }
+      .seccionContacto-celular .contactoCelular p {
+        font-size: 1rem;
+        color: #1b1b5c; }
+      .seccionContacto-celular .contactoCelular form label {
+        margin-bottom: 2px;
+        font-size: 0.8rem;
+        color: #1b1b5c; }
+      .seccionContacto-celular .contactoCelular form button {
+        background: #33a79d;
+        border: 1px solid transparent;
+        color: #ffffff;
+        border-radius: 0;
+        font-size: 1.3rem;
+        padding: 5px 30px;
+        border-radius: 5px;
+        margin-top: 35px;
+        float: right;
+        margin-bottom: 35px; }
+    .seccionContacto-celular .newletterCelular {
+      background-color: #1279ef;
+      padding: 45px 50px 10px; }
+      .seccionContacto-celular .newletterCelular h1 {
+        font-family: "Rakkas", cursive;
+        font-size: 3rem;
+        color: #ffffff; }
+      .seccionContacto-celular .newletterCelular p {
+        font-size: 1rem;
+        color: #ffffff; }
+      .seccionContacto-celular .newletterCelular form label {
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+        color: #ffffff; }
+      .seccionContacto-celular .newletterCelular form button {
+        background: #1b1b5c;
+        border: 1px solid transparent;
+        float: right;
+        color: #ffffff;
+        border-radius: 0;
+        font-size: 1.3rem;
+        padding: 5px 20px;
+        border-radius: 5px;
+        margin-top: 35px;
+        margin-bottom: 35px; }
+  /* ---------------- */
+  /* -----FOOTER----- */
+  /* ---------------- */
+  footer .iconos ul {
+    display: flex;
+    gap: 10px;
+    padding: 0%; }
+  footer .derechos {
+    padding: 0px 30px; } }
+
+@media (max-width: 576px) {
+  /*Navbar*/
+  .header .navbar img {
+    margin-right: 100px; }
+  .listaIconos {
+    display: none; }
+  /*---------------*/
+  /*-----INDEX-----*/
+  /*---------------*/
+  .intro {
+    height: 65vh; }
+    .intro img {
+      margin-top: 35%; }
+    .intro h2 {
+      margin-top: 3%;
+      font-size: 1.5rem;
+      line-height: 2rem; }
+    .intro .hastag {
+      font-size: 1.3rem;
+      margin-top: 15%; }
+  /*----------------*/
+  /*----ARTISTAS----*/
+  /*----------------*/
+  .artistas {
+    display: grid;
+    grid-template-columns: repeat(2, 50%); }
+  .cadaArtista {
+    height: 25vh; }
+    .cadaArtista div h3 {
+      font-size: 1.1rem; }
+    .cadaArtista div P {
+      font-size: 0.8rem; }
+  /*----------------*/
+  /*----ENTRADAS----*/
+  /*----------------*/
+  .introEntradas img {
+    margin-top: 65%;
+    margin-bottom: 10px; }
+  .entradas .entradasPrecios {
+    flex-direction: column; }
+    .entradas .entradasPrecios .generalIndividual {
+      margin-top: 20px;
+      margin-bottom: 30px; }
+      .entradas .entradasPrecios .generalIndividual .boleta .etapa {
+        width: 40%;
+        text-align: center;
+        font-size: 1.2rem; }
+      .entradas .entradasPrecios .generalIndividual .boleta .precio {
+        width: 60%;
+        font-size: 1rem; }
+      .entradas .entradasPrecios .generalIndividual .boleta .agotado {
+        width: 60%;
+        font-size: 1.2rem; }
+  /*---------------*/
+  /*-----FAQ'S-----*/
+  /*---------------*/
+  .introFaqs img {
+    margin-top: 30%;
+    margin-bottom: 20px; }
+  .seccionPreguntas {
+    margin-bottom: 10px; }
+    .seccionPreguntas .preguntas {
+      margin: 0px 0px; }
+      .seccionPreguntas .preguntas .accordion-item {
+        margin: 10px 0px; }
+        .seccionPreguntas .preguntas .accordion-item h2 button {
+          font-size: 1.2rem;
+          font-weight: bold; }
+  .seccionContacto-celular {
+    margin-bottom: 0px; }
+    .seccionContacto-celular .contactoCelular {
+      padding-top: 45px;
+      background: url("../images/background-contacto-celular.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+      .seccionContacto-celular .contactoCelular h1 {
+        text-align: center; }
+      .seccionContacto-celular .contactoCelular p {
+        line-height: 1.3rem;
+        text-align: center; }
+      .seccionContacto-celular .contactoCelular form button {
+        margin-top: 15px;
+        margin-bottom: 50px;
+        float: center; }
+    .seccionContacto-celular .newletterCelular {
+      background-color: #1279ef;
+      padding: 30px 50px 10px;
+      margin-top: -23px;
+      margin-bottom: 0px; }
+      .seccionContacto-celular .newletterCelular h1 {
+        text-align: center; }
+      .seccionContacto-celular .newletterCelular p {
+        line-height: 1.3rem;
+        text-align: center; }
+      .seccionContacto-celular .newletterCelular form button {
+        margin-top: 15px;
+        float: center; }
+  /*--------------*/
+  /*----FOOTER----*/
+  /*--------------*/
+  footer ul li {
+    font-size: 0.8rem; }
+  footer .iconos {
+    justify-content: start;
+    margin-top: 10px; }
+    footer .iconos ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0%; }
+      footer .iconos ul li img {
+        width: 45%; }
+    footer .iconos p {
+      text-align: start;
+      margin-bottom: 0px;
+      font-size: 0.8rem;
+      margin-bottom: 10px; }
+  footer .derechos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-footer .derechos img{
-    width: 15%;
-}
-
-footer .derechos button{
-    font-size: 1rem;
-    color: var(--Color-blanco);
-    background-color: var(--Color-verde);
-    padding: 5px 40px;
-    border-radius: 5px;
-    border: 1px solid transparent;
-}
-
-
-
-/*`md` applies to small devices (landscape phones, less than 768px)*/
-@media (max-width: 810px) {
-
-    /*Navbar*/
-    .header .navbar img{
-        margin-right: 400px;
-    }
-
-    .listaIconos{
-        position: absolute;
-        top: 25%;
-        left: -1%;
-        display: block;
-    }
-
-    /* ----------------- */
-    /*      INDEX        */
-    /* ----------------- */
-
-    /* Primera Seccion */
-    .intro{
-        height: 65vh;
-        background-color: var(--color-azul);
-        margin-top: -10px;
-    }
-    .intro img{
-        margin-top: 25%;
-    }
-
-
-    .artistas{
-        display: grid;
-        grid-template-columns: repeat(3,33%);
-    }
-
-    .cadaArtista{
-        height: 25vh;
-    }
-
-    /* ----------------- */
-    /*     ARTISTAS      */
-    /* ----------------- */
-
-    .bannerArtistas{
-        height: 23vh;
-        background-color: var(--Color-negro);
-        margin-top: -10px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .bannerArtistas .titularArtistas{
-        bottom: 20px;
-        width: 50%;
-        left: 25%;
-        right: 25%;
-    }
-
-    .bi-funnel-fill{
-        display: none;
-    }
-
-    .selector div{
-        margin-top: 5px;
-        margin-bottom: 3px;
-    }
-
-    /*----------------*/
-    /*----Entradas----*/
-    /*----------------*/
-
-    .generalIndividual{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .entradasPrecios{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-    /* Estilos corte de boletas*/
-    .imgBoleta{
-        display: none;
-    }
-    .imgBoleta .contenedorBoleta{
-        display: none;
-    }
-    /* End estilos corte de boletas*/
-    .entradasPrecios .boleta .etapa{
-        width: 30%;
-        text-align: center;
-    }
-    .entradasPrecios .boleta .precio{
-        width: 70%;
-        font-size: 1.5rem;
-        text-align: center;
-        color: var(--color-azul);
-    }
-    /* Usar Class="agotado" para aplicar este estilo  */
-    .entradasPrecios .boleta .agotado{
-        width: 70%;
-        font-size: 1.5rem;
-        text-align: center;
-        font-style: italic;
-        background-color: var(--color-azul);
-        color: var(--Color-blanco);
-    }
-
-    /* ----------------- */
-    /*       FAQS        */
-    /* ----------------- */
-
-    .introFaqs img{
-        margin-top: 20%;
-        margin-bottom: 20px;
-    }
-    .seccionPreguntas{
-        background-color: var(--Color-blanco);
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .preguntas{
-        margin: 20px 0px;
-    }
-    .preguntas .accordion-item{
-        margin: 20px 0px;
-    }
-    .preguntas .accordion-item h2 button{
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-
-    .seccionContacto-celular{
-        padding-top: 50px;
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    .seccionContacto-celular .contactoCelular{
-        padding-top: 45px;
-        padding-left: 50px;
-        padding-right: 50px;
-        background: url("../images/background-contacto-celular.svg");
-        background-size: cover;
-
-    }
-
-    .contactoCelular h1{
-        font-family: var(--Tipografia-festival);
-        font-size: 3rem;
-        color: var(--Color-azulOscuro);
-    }
-    
-    .contactoCelular p{
-        font-size: 1rem;
-        color: var(--Color-azulOscuro);
-    }
-    
-    .contactoCelular form label{
-        margin-bottom: 2px;
-        font-size: 0.8rem;
-        color: var(--Color-azulOscuro);
-
-    }
-    
-    .contactoCelular form button{
-        background: var(--Color-verde);
-        border: 1px solid transparent;
-        color: var(--Color-blanco);
-        border-radius: 0;
-        font-size: 1.3rem;
-        padding: 5px 30px;
-        border-radius: 5px;
-        margin-top: 35px;
-        float: right;
-        margin-bottom: 35px;
-    }
-
-    .seccionContacto-celular .newletterCelular{
-        background-color: var(--color-azul);
-        padding: 45px 50px 10px;
-    }
-
-    .newletterCelular h1{
-        font-family: var(--Tipografia-festival);
-        font-size: 3rem;
-        color: var(--Color-blanco);
-    }
-    .newletterCelular p{
-        font-size: 1rem;
-        color: var(--Color-blanco);
-    }
-    
-    .newletterCelular form label{
-        margin-bottom: 5px;
-        font-size: 0.8rem;
-        color: var(--Color-blanco);
-    }
-    
-    .newletterCelular form button{
-        background: var(--Color-azulOscuro);
-        border: 1px solid transparent;
-        float: right;
-        color: var(--Color-blanco);
-        border-radius: 0;
-        font-size: 1.3rem;
-        padding: 5px 20px;
-        border-radius: 5px;
-        margin-top: 35px;
-        margin-bottom: 35px;
-    }
-
-    /* -------------- */
-    /* ----Footer---- */
-    /* -------------- */    
-
-    footer .iconos ul{
-        display: flex;
-        gap: 10px;
-        padding: 0%;
-    }
-
-    footer .derechos{
-        padding:0px 30px;
-    }
-}
-
-
-
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 576px) {
-
-    .header .navbar img{
-        margin-right: 100px;
-    }
-
-    .listaIconos{
-        display: none;
-    }
-
-    /*---------------*/
-    /*---- Index ----*/
-    /*---------------*/
-
-    .intro{
-        height: 65vh;
-    }
-    .intro img{
-        margin-top: 35%;
-    }
-    .intro h2{
-        margin-top: 3%;
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-    .intro .hastag{
-        font-size: 1.3rem;
-        margin-top: 15%;
-    }
-
-    /*----------------*/
-    /*----Artistas----*/
-    /*----------------*/
-
-    .artistas{
-        display: grid;
-        grid-template-columns: repeat(2,50%);
-    }
-    .cadaArtista{
-        height: 25vh;
-    }
-
-    .cadaArtista div h3{
-        font-size: 1.1rem;
-    }
-    
-    .cadaArtista div p{
-        font-size: 0.8rem;
-    }
-
-    /*----------------*/
-    /*----Entradas----*/
-    /*----------------*/
-    .introEntradas img{
-        margin-top: 65%;
-        margin-bottom: 10px;
-    }
-    .generalIndividual{
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    .entradasPrecios .boleta .etapa{
-        width: 40%;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-    .entradasPrecios .boleta .precio{
-        width: 60%;
-        font-size: 1.2rem;
-        text-align: center;
-        color: var(--color-azul);
-    }
-    /* Usar Class="agotado" para aplicar este estilo  */
-    .entradasPrecios .boleta .agotado{
-        width: 60%;
-        font-size: 1.2rem;
-        text-align: center;
-        font-style: italic;
-        background-color: var(--color-azul);
-        color: var(--Color-blanco);
-    }
-
-
-    /* ----------------- */
-    /*       FAQS        */
-    /* ----------------- */
-
-    .introFaqs img{
-        margin-top: 30%;
-        margin-bottom: 20px;
-    }
-    .seccionPreguntas{
-        background-color: var(--Color-blanco);
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .preguntas{
-        margin: 0px 0px;
-    }
-    .preguntas .accordion-item{
-        margin: 10px 0px;
-    }
-    .preguntas .accordion-item h2 button{
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-
-    .seccionContacto-celular .contactoCelular{
-        padding-top: 45px;
-        background: url("../images/background-contacto-celular.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
-
-    .contactoCelular h1{
-        font-family: var(--Tipografia-festival);
-        font-size: 3rem;
-        color: var(--Color-azulOscuro);
-        text-align: center;
-    }
-    
-    .contactoCelular p{
-        text-align: center;
-        font-size: 1rem;
-        line-height: 1.3rem;
-        color: var(--Color-azulOscuro);
-    }
-    
-    .contactoCelular form label{
-        margin-bottom: 5px;
-        font-size: 0.8rem;
-        color: var(--Color-azulOscuro);
-
-    }
-    
-    .contactoCelular form button{
-        background: var(--Color-verde);
-        border: 1px solid transparent;
-        color: var(--Color-blanco);
-        border-radius: 0;
-        font-size: 1.3rem;
-        padding: 5px 30px;
-        border-radius: 5px;
-        margin-top: 15px;
-        float: right;
-        margin-bottom: 50px;
-    }
-
-    .seccionContacto-celular .newletterCelular{
-        background-color: var(--color-azul);
-        padding: 30px 50px 10px;
-        margin-top: -23px;
-    }
-
-    .newletterCelular h1{
-        font-family: var(--Tipografia-festival);
-        font-size: 3rem;
-        text-align: center;
-    }
-    .newletterCelular p{
-        font-size: 1rem;
-        line-height: 1.3rem;
-        text-align: center;
-    }
-    
-    .newletterCelular form label{
-        margin-bottom: 5px;
-        font-size: 0.8rem;
-    }
-    
-    .newletterCelular form button{
-        background: var(--Color-azulOscuro);
-        border: 1px solid transparent;
-        float: right;
-        color: var(--Color-blanco);
-        border-radius: 0;
-        font-size: 1.3rem;
-        padding: 5px 20px;
-        border-radius: 5px;
-        margin-top: 15px;
-        margin-bottom: 35px;
-    }
-
-    /* -------------- */
-    /* ----Footer---- */
-    /* -------------- */
-    footer ul{
-        padding-left: 0px;
-        margin-bottom: 0px;
-    }
-
-    footer ul li{
-        font-size: 0.8rem;
-        
-    }
-
-    footer .iconos{
-    justify-content: start;
-    margin-top: 10px;
-    }
-
-    footer .iconos p{
-        text-align: start;
-        margin-bottom: 0px;
-        font-size: 0.8rem;
-        margin-bottom: 10px;
-    }
-
-    footer .iconos ul{
-        display: flex;        
-        justify-content: space-between;
-        padding: 0%;
-    }
-
-    footer .iconos ul li img{
-        width: 45%;
-    }
-
-    footer .derechos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0px;
-    }
-
-    footer .derechos img{
-        width: 35%;
-    }
-
-}
+    padding: 0px; }
+    footer .derechos img {
+      width: 35%; } }

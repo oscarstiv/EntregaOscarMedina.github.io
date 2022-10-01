@@ -1,0 +1,124 @@
+/* ---------------- */
+/* ----ARTISTAS---- */
+/* ---------------- */
+
+.bannerArtistas{
+    height: 40vh;
+    background-image: url("../images/banner-artistas.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -10px;
+    position: relative;
+    .titularArtistas{
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+    }
+}
+
+.selector{
+    background-color: nth($colores,4);
+    color: nth($colores,1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.artistas{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+
+.cadaArtista{
+    width: 100%;
+    height: 342px;
+    position: relative;
+    div{
+        background-color: #000000ca;
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        border-radius: 0px 30px 0px 0px;
+        &:hover{
+            height: 100px;
+            cursor: pointer;
+        }
+        h3{
+            color: nth($colores,1);
+            margin: 0px 20px;
+            margin-top: 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        p{
+            color: nth($colores,1);
+            margin: 0px 20px;
+            margin-bottom: 20px;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+/* Artistas */
+.slipknot{
+    background-image: url("../images/Slipknot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.royalBlood{
+    background-image: url("../images/Royal-blood.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theWeeknd{
+    background-image: url("../images/The-weeknd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.daftPunk{
+    background-image: url("../images/Daft-punk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mileyCirus{
+    background-image: url("../images/Miley-cirus.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cuartetoNos{
+    background-image: url("../images/El-cuarteto-de-nos.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.joji{
+    background-image: url("../images/Joji.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twentyOnePilots{
+    background-image: url("../images/Twenty-one-pilots.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* End Artistas */
+
+/* ----------------- */
+/*    END ARTISTAS   */
+/* ----------------- */

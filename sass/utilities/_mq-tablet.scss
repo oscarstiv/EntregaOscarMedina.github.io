@@ -1,0 +1,226 @@
+@media (max-width: 810px) {
+    /*Navbar*/
+    .header{ 
+        .navbar{ 
+            img{
+                margin-right: 400px;
+            }
+        }
+    }
+
+    /*Iconos*/
+
+    .listaIconos{
+        position: absolute;
+        top: 25%;
+        left: -6%;
+        display: block;
+    }
+
+    /* --------------- */
+    /* -----INDEX----- */
+    /* --------------- */
+
+    /* Primera Seccion */
+    .intro{
+        height: 65vh;
+        background-color: nth($colores,4);
+        margin-top: -10px;
+        img{
+            margin-top: 25%;
+        }
+    }
+
+    /* ---------------- */
+    /* ----ARTISTAS---- */
+    /* ---------------- */
+    .bannerArtistas{
+        height: 23vh;
+        background-color: nth($colores,2);
+        margin-top: -10px;
+        display: flex;
+        justify-content: center;
+        .titularArtistas{
+            bottom: 20px;
+            width: 50%;
+            left: 25%;
+            right: 25%;
+        }
+    }
+
+    .artistas{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+    }
+
+    .cadaArtista{
+        height: 25vh;
+    }
+
+    .selector{ 
+        div{
+        margin-top: 5px;
+        margin-bottom: 3px;
+        }
+    }
+
+    /* ---------------- */
+    /* ----ENTRADAS---- */
+    /* ---------------- */
+
+    .entradas{
+        .entradasPrecios{
+            flex-direction: row;            
+            .generalIndividual{
+                margin: 30px 30px 30px 10px;
+                h2{
+                    margin-top: 15px;
+                    font-size: 2rem;
+                }
+                .boleta{
+                    .etapa{
+                        width: 30%;
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
+                    .precio{
+                        width: 70%;
+                        font-size: 1rem;
+                    }
+                    .agotado{
+                        width: 70%;
+                        font-size: 1.2rem;
+                    }                    
+                }
+                .contenedorCodigo{
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                }            
+            }
+            .imgBoleta{
+                .contenedorBoleta{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    /* ----------------- */
+    /* ------FAQ'S------ */
+    /* ----------------- */
+
+    .introFaqs{
+        img{
+            margin-top: 20%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .seccionPreguntas{
+        background-color: nth($colores,1);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .preguntas{
+            margin: 20px 0px;
+            .accordion-item{
+                margin: 20px 0px;
+                h2{
+                    button{
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .seccionContacto-celular{
+        padding-top: 50px;
+        width: 100%;
+        margin-bottom: 50px;
+        .contactoCelular{
+            padding-top: 45px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background: url("../images/background-contacto-celular.svg");
+            background-size: cover; 
+            h1{
+                font-family: $Tipografia-festival;
+                font-size: 3rem;
+                color: nth($colores,5);
+            }
+            p{
+                font-size: 1rem;
+                color: nth($colores,5);
+            } 
+            form{
+                label{
+                    margin-bottom: 2px;
+                    font-size: 0.8rem;
+                    color: nth($colores,5);
+                }
+                button{
+                    background: nth($colores,6);
+                    border: 1px solid transparent;
+                    color: nth($colores,1);
+                    border-radius: 0;
+                    font-size: 1.3rem;
+                    padding: 5px 30px;
+                    border-radius: 5px;
+                    margin-top: 35px;
+                    float: right;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+        .newletterCelular{
+            background-color: nth($colores,4);
+            padding: 45px 50px 10px;
+            h1{
+                font-family: $Tipografia-festival;
+                font-size: 3rem;
+                color: nth($colores,1);
+            }
+            p{
+                font-size: 1rem;
+                color: nth($colores,1);
+            }
+            form{
+                label{
+                    margin-bottom: 5px;
+                    font-size: 0.8rem;
+                    color: nth($colores,1);
+                }
+                button{
+                    background: nth($colores,5);
+                    border: 1px solid transparent;
+                    float: right;
+                    color: nth($colores,1);
+                    border-radius: 0;
+                    font-size: 1.3rem;
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                    margin-top: 35px;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+    }
+
+    /* ---------------- */
+    /* -----FOOTER----- */
+    /* ---------------- */
+
+    footer{ 
+        .iconos{ 
+            ul{
+                display: flex;
+                gap: 10px;
+                padding: 0%;
+            }
+        }
+        .derechos{
+            padding:0px 30px;
+        }
+    }
+}

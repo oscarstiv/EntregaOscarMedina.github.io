@@ -1,0 +1,124 @@
+/* ------------------ */
+/* -----ENTRADAS----- */
+/* ------------------ */
+
+.introEntradas{
+    img{
+        margin-top: 35%;
+        margin-bottom: 50px;
+    }
+} 
+
+.entradas{
+    hr{
+        margin-bottom: 50px;
+    }
+    h1{
+        font-family: $Tipografia-festival;
+        color: nth($colores,4);
+        font-size: 2rem;
+    }
+    p{
+        color: nth($colores,2);
+        font-size: 1.2rem;
+    }
+    .entradasPrecios{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        .generalIndividual{
+            width: 90%;
+            max-width: 470px;
+            background-color: nth($colores,1);
+            padding: 0px 20px;
+            border-radius: 20px 20px 0px 0px;
+            margin-top: 50px;
+            h2{
+                text-align: center;
+                margin-top: 30px;
+                font-size: 2.5rem;
+                font-family: $Tipografia-festival;
+            }
+            p{
+                border-bottom: 2px solid;
+                font-size: 2rem;
+                padding: 15px 0;
+            }
+            .boleta{
+                display: flex;
+                align-items: center;
+                color: nth($colores,5);
+                .etapa{
+                    width: 25%;
+                    text-align: center;
+                }
+                .precio{
+                    width: 75%;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    color: nth($colores,4);
+                }
+                /* Usar Class="agotado" para aplicar este estilo  */
+                .agotado{
+                    width: 75%;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    font-style: italic;
+                    background-color:nth($colores,4);
+                    color:nth($colores,1);
+                }                
+            }   
+            .contenedorCodigo{
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }            
+        }
+        /* Estilos corte de boletas*/
+        .imgBoleta{
+            width: 90%;
+            max-width: 470px;
+            margin-bottom: 50px;
+            .contenedorBoleta{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        /* End estilos corte de boletas*/ 
+        
+    }   
+    .legales{
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        .comprar{
+            background: nth($colores,6);
+            color: nth($colores,1);
+            padding: 5px 30px;
+            border: 2px solid transparent;
+            border-radius: 13px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 50px;
+            transition: 0.3s;
+            &:hover{
+                transform: scale(1.1,1.1);
+                background: nth($colores,1);
+                color: nth($colores,6);
+                padding: 5px 30px;
+                border: 2px solid nth($colores,6);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* ------------------ */
+/* ---END ENTRADAS--- */
+/* ------------------ */

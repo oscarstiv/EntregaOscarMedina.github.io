@@ -1,0 +1,203 @@
+@media (max-width: 576px) {
+    /*Navbar*/
+    .header{ 
+        .navbar{ 
+            img{
+                margin-right: 100px;
+            }
+        }
+    }
+
+    .listaIconos{
+        display: none;
+    }
+
+    /*---------------*/
+    /*-----INDEX-----*/
+    /*---------------*/
+
+    .intro{
+        height: 65vh;
+        img{
+            margin-top: 35%;
+        }
+        h2{
+            margin-top: 3%;
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        .hastag{
+            font-size: 1.3rem;
+            margin-top: 15%;
+        }
+    }
+
+    /*----------------*/
+    /*----ARTISTAS----*/
+    /*----------------*/
+
+    .artistas{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+
+    .cadaArtista{
+        height: 25vh;
+        div{
+            h3{
+                font-size: 1.1rem;
+            }
+            P{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    /*----------------*/
+    /*----ENTRADAS----*/
+    /*----------------*/
+
+    .introEntradas{
+        img{
+            margin-top: 65%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .entradas{
+        .entradasPrecios{
+            flex-direction: column;            
+            .generalIndividual{
+                margin-top: 20px;
+                margin-bottom: 30px;
+                .boleta{
+                    .etapa{
+                        width: 40%;
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
+                    .precio{
+                        width: 60%;
+                        font-size: 1rem;
+                    }
+                    .agotado{
+                        width: 60%;
+                        font-size: 1.2rem;
+                    }                    
+                }          
+            }
+        }
+    }
+
+    /*---------------*/
+    /*-----FAQ'S-----*/
+    /*---------------*/
+
+    .introFaqs {
+        img{
+            margin-top: 30%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .seccionPreguntas{
+        margin-bottom: 10px;
+        .preguntas{
+            margin: 0px 0px;
+            .accordion-item{
+                margin: 10px 0px;
+                h2{
+                    button{
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .seccionContacto-celular{
+        margin-bottom: 0px;
+        .contactoCelular{
+            padding-top: 45px;
+            background: url("../images/background-contacto-celular.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            h1{
+                text-align: center;
+            }
+            p{
+                line-height: 1.3rem;
+                text-align: center;
+            } 
+            form{
+                button{
+                    margin-top: 15px;
+                    margin-bottom: 50px;
+                    float: center;
+                }
+            }
+        }
+        .newletterCelular{
+            background-color: nth($colores,4);
+            padding: 30px 50px 10px;
+            margin-top: -23px;
+            margin-bottom: 0px;
+            h1{
+                text-align: center;
+            }
+            p{
+                line-height: 1.3rem;
+                text-align: center;
+            }
+            form{
+                button{
+                    margin-top: 15px;
+                    float: center;
+                }
+            }
+        }
+    }
+
+    /*--------------*/
+    /*----FOOTER----*/
+    /*--------------*/
+
+    footer{ 
+        ul{
+            li{
+                font-size: 0.8rem;
+            }
+        }
+        .iconos{ 
+            justify-content: start;
+            margin-top: 10px;
+            ul{
+                display: flex;        
+                justify-content: space-between;
+                padding: 0%;
+                li{
+                    img{
+                        width: 45%; 
+                    }
+                }
+            }
+            p{
+                text-align: start;
+                margin-bottom: 0px;
+                font-size: 0.8rem;
+                margin-bottom: 10px;
+            }
+        }
+        .derechos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0px;
+            img{
+                width: 35%; 
+            }
+        }
+    }
+}

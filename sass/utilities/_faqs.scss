@@ -1,0 +1,112 @@
+/* ---------------- */
+/* ------FAQS------ */
+/* ---------------- */
+
+.introFaqs {
+    img{
+        margin-top: 15%;
+        margin-bottom: 30px;
+    }
+}
+
+.seccionPreguntas{
+    background-color: nth($colores,1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .preguntas{
+        margin: 30px 0px;
+    }
+    .accordion-item{
+        margin: 30px 0px;
+        h2{ 
+            button{
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.seccionContacto{
+    background-image: url("../images/background-contacto.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 445px;
+    padding-top: 55px;
+    width: 100%;
+    margin-bottom: 100px;
+    .contacto{
+        padding-top: 0px;
+        padding-left: 68px;
+        padding-right: 50px;
+        h1{
+            font-family: $Tipografia-festival;
+            font-size: 3rem;
+            color: nth($colores,5);
+        }
+        p{
+            font-size: 1rem;
+            color: nth($colores,5);
+        }
+        form{
+            label{
+                margin-bottom: 2px;
+                font-size: 0.8rem;
+                color: nth($colores,5);
+            }
+            button{
+                background: nth($colores,6);
+                border: 1px solid transparent;
+                float: right;
+                color: nth($colores,1);
+                border-radius: 0;
+                font-size: 1.3rem;
+                padding: 5px 30px;
+                border-radius: 5px;
+                transition: 0.3s;
+                &:hover{
+                    transform: rotate(10deg);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .newletter{
+        padding: 25px 50px 10px;
+        color: nth($colores,1);
+        h1{
+            font-family: $Tipografia-festival;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        form{
+            label{
+                margin-bottom: 2px;
+                font-size: 0.8rem;
+            }
+            button{
+                background: nth($colores,5);
+                border: 1px solid transparent;
+                float: right;
+                margin-top: 15px;
+                color: nth($colores,1);
+                border-radius: 0;
+                font-size: 1.3rem;
+                padding: 5px 20px;
+                border-radius: 5px;
+                transition: 0.3s;
+                &:hover{
+                    transform: rotate(10deg);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------ */
+/* -----END FAQS----- */
+/* ------------------ */
