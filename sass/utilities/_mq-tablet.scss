@@ -1,4 +1,4 @@
-@media (max-width: 810px) {
+@media (min-width: 577px)and(max-width: 820px) {
     /*Navbar*/
     .header{ 
         .navbar{ 
@@ -23,11 +23,14 @@
 
     /* Primera Seccion */
     .intro{
-        height: 65vh;
+        height: 58vh;
         background-color: nth($colores,4);
-        margin-top: -10px;
+        @include margenY (-10px,0px);
         img{
-            margin-top: 25%;
+            @include margenY (25%,0px);
+        }
+        .hastag{
+            @include margenY (10%,0px);
         }
     }
 
@@ -59,8 +62,7 @@
 
     .selector{ 
         div{
-        margin-top: 5px;
-        margin-bottom: 3px;
+            @include margenY (5px,3px);
         }
     }
 
@@ -94,9 +96,6 @@
             }
             .textos1{
                 grid-area: texto1;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
                 h1{
                     margin-top: 20px;
                     margin-bottom: 20px;
@@ -139,9 +138,6 @@
             }
             .textos2{
                 grid-area: texto2;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
                 h1{
                     margin-top: 20px;
                     margin-bottom: 20px;
@@ -183,9 +179,6 @@
             }
             .textos3{
                 grid-area: texto3;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
                 h1{
                     margin-top: 20px;
                     margin-bottom: 20px;
@@ -225,7 +218,7 @@
     .entradas{
         .entradasPrecios{
             flex-direction: row;            
-            .generalIndividual{
+            .entradasTicket{
                 margin: 30px 30px 30px 10px;
                 h2{
                     margin-top: 15px;
@@ -233,29 +226,26 @@
                 }
                 .boleta{
                     .etapa{
-                        width: 30%;
+                        width: $Medida-maxima - 70;
                         text-align: center;
                         font-size: 1.2rem;
                     }
                     .precio{
-                        width: 70%;
+                        width: $Medida-maxima - 30;
                         font-size: 1rem;
                     }
                     .agotado{
-                        width: 70%;
+                        width: $Medida-maxima - 30;
                         font-size: 1.2rem;
                     }                    
                 }
                 .contenedorCodigo{
-                    margin-top: 0px;
-                    margin-bottom: 20px;
+                    @include margenY (0px, 20px);
                 }            
             }
-            .imgBoleta{
-                .contenedorBoleta{
-                    display: none;
-                }
-            }
+        }
+        .corteBoletas{
+            display: none;
         }
     }
 
@@ -265,15 +255,13 @@
 
     .introFaqs{
         img{
-            margin-top: 20%;
-            margin-bottom: 20px;
+            @include margenY (20%, 20px);
         }
     }
 
     .seccionPreguntas{
         background-color: nth($colores,1);
-        margin-top: 30px;
-        margin-bottom: 30px;
+        @include margenY (30px, 30px);
         .preguntas{
             margin: 20px 0px;
             .accordion-item{
@@ -290,8 +278,8 @@
 
     .seccionContacto-celular{
         padding-top: 50px;
-        width: 100%;
-        margin-bottom: 50px;
+        width: $Medida-maxima;
+        @include margenY (0px, 50px);
         .contactoCelular{
             padding-top: 45px;
             padding-left: 50px;
@@ -321,9 +309,8 @@
                     font-size: 1.3rem;
                     padding: 5px 30px;
                     border-radius: 5px;
-                    margin-top: 35px;
+                    @include margenY (35px, 35px);
                     float: right;
-                    margin-bottom: 35px;
                 }
             }
         }
@@ -354,8 +341,7 @@
                     font-size: 1.3rem;
                     padding: 5px 20px;
                     border-radius: 5px;
-                    margin-top: 35px;
-                    margin-bottom: 35px;
+                    @include margenY (35px, 35px);
                 }
             }
         }

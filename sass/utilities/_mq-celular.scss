@@ -28,7 +28,7 @@
         }
         .hastag{
             font-size: 1.3rem;
-            margin-top: 15%;
+            margin-top: 60px;
         }
     }
 
@@ -95,11 +95,7 @@
                     margin-bottom: 0px;
                     padding: 0 30px;
                     button{
-                        padding: 5px 20px;
-                        border: 1px solid transparent;
-                        background-color:nth($colores,6);
-                        color: nth($colores,1);
-                        border-radius: 5px;
+                        @include botonesExperienciasCel;
                     }
                 }
             }
@@ -140,11 +136,7 @@
                     margin-bottom: 0px;
                     padding: 0 30px;
                     button{
-                        padding: 5px 20px;
-                        border: 1px solid transparent;
-                        background-color:nth($colores,6);
-                        color: nth($colores,1);
-                        border-radius: 5px;
+                        @include botonesExperienciasCel;
                     }
                 }
             }
@@ -185,11 +177,7 @@
                     margin-bottom: 0px;
                     padding: 0 30px;
                     button{
-                        padding: 5px 20px;
-                        border: 1px solid transparent;
-                        background-color:nth($colores,6);
-                        color: nth($colores,1);
-                        border-radius: 5px;
+                        @include botonesExperienciasCel;
                     }
                 }
             }
@@ -203,17 +191,15 @@
 
     .introEntradas{
         img{
-            margin-top: 65%;
-            margin-bottom: 10px;
+            @include margenY (65%,10px);
         }
     }
 
     .entradas{
         .entradasPrecios{
             flex-direction: column;            
-            .generalIndividual{
-                margin-top: 20px;
-                margin-bottom: 30px;
+            .entradasTicket{
+                @include margenY (20px,30px);
                 .boleta{
                     .etapa{
                         width: 40%;
@@ -231,6 +217,9 @@
                 }          
             }
         }
+        .corteBoletas{
+            display: none;
+        }
     }
 
     /*---------------*/
@@ -239,15 +228,14 @@
 
     .introFaqs {
         img{
-            margin-top: 30%;
-            margin-bottom: 20px;
+            @include margenY (30%,20px);
         }
     }
 
     .seccionPreguntas{
-        margin-bottom: 10px;
+        @include margenY (0px,10px);
         .preguntas{
-            margin: 0px 0px;
+            @include margenY (0px,0px);
             .accordion-item{
                 margin: 10px 0px;
                 h2{
@@ -286,8 +274,7 @@
         .newletterCelular{
             background-color: nth($colores,4);
             padding: 30px 50px 10px;
-            margin-top: -23px;
-            margin-bottom: 0px;
+            @include margenY (-23px,0px);
             h1{
                 text-align: center;
             }

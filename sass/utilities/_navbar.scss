@@ -1,0 +1,27 @@
+/* Navbar */
+.header{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    display: flex;
+    justify-content: center;
+    .navbar{
+        border-radius: 5px;
+        background-color: nth($colores,1);
+        border: 1px solid transparent;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.32);
+        position: fixed;
+        z-index: 1000;
+        img{
+            margin-right: 250px;
+        }
+        .nav-link{
+            transition: 0.3s;
+            &:hover{
+                color: nth($colores,4);
+                text-decoration: underline; 
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@
 
 .bannerArtistas{
     height: 40vh;
-    background-image: url("../images/banner-artistas.jpg");
+    background-image: url("../images/background.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@
 }
 
 .selector{
-    background-color: nth($colores,4);
+    background-color: nth($colores,5);
     color: nth($colores,1);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -31,14 +31,14 @@
 }
 
 .cadaArtista{
-    width: 100%;
+    width: $Medida-maxima;
     height: 342px;
     position: relative;
     div{
         background-color: #000000ca;
         position: absolute;
         bottom: 0;
-        width: 80%;
+        width: $Medida-maxima - 20;
         border-radius: 0px 30px 0px 0px;
         &:hover{
             height: 100px;
