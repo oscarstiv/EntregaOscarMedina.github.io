@@ -1296,29 +1296,59 @@ footer {
       background: url("../images/background-contacto-celular.svg");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      padding: 30px 50px 10px; }
       .seccionContacto-celular .contactoCelular h1 {
-        text-align: center; }
+        font-size: 3rem;
+        text-align: center;
+        font-family: "Rakkas", cursive;
+        color: #1b1b5c; }
       .seccionContacto-celular .contactoCelular p {
         line-height: 1.3rem;
-        text-align: center; }
-      .seccionContacto-celular .contactoCelular form button {
-        margin-top: 15px;
-        margin-bottom: 50px;
-        float: center; }
+        text-align: center;
+        color: #1b1b5c; }
+      .seccionContacto-celular .contactoCelular form {
+        margin-bottom: 2px;
+        font-size: 0.8rem;
+        color: #1b1b5c; }
+        .seccionContacto-celular .contactoCelular form button {
+          background: #33a79d;
+          border: 1px solid transparent;
+          color: #ffffff;
+          border-radius: 0;
+          font-size: 1.3rem;
+          padding: 5px 30px;
+          border-radius: 5px;
+          margin-top: 15px;
+          margin-bottom: 50px;
+          float: right; }
     .seccionContacto-celular .newletterCelular {
       background-color: #1279ef;
       padding: 30px 50px 10px;
       margin-top: -23px;
       margin-bottom: 0px; }
       .seccionContacto-celular .newletterCelular h1 {
-        text-align: center; }
+        font-size: 3rem;
+        text-align: center;
+        font-family: "Rakkas", cursive;
+        color: #ffffff; }
       .seccionContacto-celular .newletterCelular p {
         line-height: 1.3rem;
-        text-align: center; }
-      .seccionContacto-celular .newletterCelular form button {
-        margin-top: 15px;
-        float: center; }
+        text-align: center;
+        color: #ffffff; }
+      .seccionContacto-celular .newletterCelular form {
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+        color: #ffffff; }
+        .seccionContacto-celular .newletterCelular form button {
+          margin-top: 15px;
+          border-radius: 5px;
+          font-size: 1.3rem;
+          padding: 5px 20px;
+          background: #1b1b5c;
+          border: 1px solid transparent;
+          float: right;
+          color: #ffffff; }
   /*--------------*/
   /*----FOOTER----*/
   /*--------------*/
