@@ -20,19 +20,37 @@
 .experiencias{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     .experiencia1{
         height: auto;
         display: grid;
         grid-template-columns: 55% 45%;
         grid-template-areas: 
         "imagen1 texto1";
+        min-height: 550px;
+        @include margenY(0px, 60px);
+        padding: 70px 0px;
+        position: relative;
         .imagen1{
             grid-area: imagen1;
+            background-image: url("https://www.taquillalive.com/storage/2022/03/nosotros-1150X550.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 90%;
+            margin-left: 60px;
         }
         .textos1{
             grid-area: texto1;
             @extend %flexColum;
+            background: nth($colores,1);
+            padding: 48px 35px;
+            z-index: 1;
+            width: 100%;
+            margin-left: -60px;
+            @include margenY(80px,0px);
             h1{
                 margin-top: 30px;
                 margin-bottom: 30px;
@@ -65,13 +83,31 @@
         grid-template-columns: 45% 55%;
         grid-template-areas: 
         "texto2 imagen2";
+        min-height: 550px;
+        @include margenY(0px, 60px);
+        padding: 70px 0px;
+        position: relative;
         .imagen2{
             grid-area: imagen2;
-            
+            background-image: url("https://www.taquillalive.com/storage/2022/03/nosotros-1150X550.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 90%;
+            margin-right: 60px;
+            right: 0px;
         }
         .textos2{
             grid-area: texto2;
             @extend %flexColum;
+            background: nth($colores,1);
+            padding: 48px 35px;
+            z-index: 1;
+            width: 100%;
+            margin-left: 60px;
+            @include margenY(80px,0px);
             h1{
                 margin-top: 30px;
                 margin-bottom: 30px;
@@ -95,7 +131,7 @@
                 button{
                     @include botonesExperiencias;
                 }
-            }           
+            }
         }
     }
     .experiencia3{
@@ -104,12 +140,30 @@
         grid-template-columns: 55% 45%;
         grid-template-areas: 
         "imagen3 texto3";
+        min-height: 550px;
+        @include margenY(0px, 60px);
+        padding: 70px 0px;
+        position: relative;
         .imagen3{
             grid-area: imagen3;
+            background-image: url("https://www.taquillalive.com/storage/2022/03/nosotros-1150X550.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 90%;
+            margin-left: 60px;
         }
         .textos3{
             grid-area: texto3;
             @extend %flexColum;
+            background: nth($colores,1);
+            padding: 48px 35px;
+            z-index: 1;
+            width: 100%;
+            margin-left: -60px;
+            @include margenY(80px,0px);
             h1{
                 margin-top: 30px;
                 margin-bottom: 30px;

@@ -84,18 +84,21 @@
     .experiencias{
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
         .experiencia1{
             height: auto;
             display: grid;
             grid-template-columns: 55% 45%;
             grid-template-areas: 
             "imagen1 texto1";
+            @include margenY(0px, 30px);
+            padding: 40px 0px;
             .imagen1{
                 grid-area: imagen1;
             }
             .textos1{
                 grid-area: texto1;
+                padding: 30px 25px;
                 h1{
                     margin-top: 20px;
                     margin-bottom: 20px;
@@ -132,12 +135,15 @@
             grid-template-columns: 45% 55%;
             grid-template-areas: 
             "texto2 imagen2";
+            @include margenY(0px, 30px);
+            padding: 40px 0px;
             .imagen2{
                 grid-area: imagen2;
                 
             }
             .textos2{
                 grid-area: texto2;
+                padding: 30px 25px;
                 h1{
                     margin-top: 20px;
                     margin-bottom: 20px;
@@ -174,11 +180,14 @@
             grid-template-columns: 55% 45%;
             grid-template-areas: 
             "imagen3 texto3";
+            @include margenY(0px, 30px);
+            padding: 40px 0px;
             .imagen3{
                 grid-area: imagen3;
             }
             .textos3{
                 grid-area: texto3;
+                padding: 30px 25px;
                 h1{
                     margin-top: 20px;
                     margin-bottom: 20px;

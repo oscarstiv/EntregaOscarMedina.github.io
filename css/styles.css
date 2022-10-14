@@ -477,16 +477,36 @@ body {
 .experiencias {
   display: flex;
   flex-wrap: wrap;
-  align-items: center; }
+  justify-content: center; }
   .experiencias .experiencia1 {
     height: auto;
     display: grid;
     grid-template-columns: 55% 45%;
-    grid-template-areas: "imagen1 texto1"; }
+    grid-template-areas: "imagen1 texto1";
+    min-height: 550px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    padding: 70px 0px;
+    position: relative; }
     .experiencias .experiencia1 .imagen1 {
-      grid-area: imagen1; }
+      grid-area: imagen1;
+      background-image: url("https://www.taquillalive.com/storage/2022/03/nosotros-1150X550.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 90%;
+      margin-left: 60px; }
     .experiencias .experiencia1 .textos1 {
-      grid-area: texto1; }
+      grid-area: texto1;
+      background: #ffffff;
+      padding: 48px 35px;
+      z-index: 1;
+      width: 100%;
+      margin-left: -60px;
+      margin-top: 80px;
+      margin-bottom: 0px; }
       .experiencias .experiencia1 .textos1 h1 {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -515,11 +535,32 @@ body {
     height: auto;
     display: grid;
     grid-template-columns: 45% 55%;
-    grid-template-areas: "texto2 imagen2"; }
+    grid-template-areas: "texto2 imagen2";
+    min-height: 550px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    padding: 70px 0px;
+    position: relative; }
     .experiencias .experiencia2 .imagen2 {
-      grid-area: imagen2; }
+      grid-area: imagen2;
+      background-image: url("https://www.taquillalive.com/storage/2022/03/nosotros-1150X550.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 90%;
+      margin-right: 60px;
+      right: 0px; }
     .experiencias .experiencia2 .textos2 {
-      grid-area: texto2; }
+      grid-area: texto2;
+      background: #ffffff;
+      padding: 48px 35px;
+      z-index: 1;
+      width: 100%;
+      margin-left: 60px;
+      margin-top: 80px;
+      margin-bottom: 0px; }
       .experiencias .experiencia2 .textos2 h1 {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -548,11 +589,31 @@ body {
     height: auto;
     display: grid;
     grid-template-columns: 55% 45%;
-    grid-template-areas: "imagen3 texto3"; }
+    grid-template-areas: "imagen3 texto3";
+    min-height: 550px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    padding: 70px 0px;
+    position: relative; }
     .experiencias .experiencia3 .imagen3 {
-      grid-area: imagen3; }
+      grid-area: imagen3;
+      background-image: url("https://www.taquillalive.com/storage/2022/03/nosotros-1150X550.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 90%;
+      margin-left: 60px; }
     .experiencias .experiencia3 .textos3 {
-      grid-area: texto3; }
+      grid-area: texto3;
+      background: #ffffff;
+      padding: 48px 35px;
+      z-index: 1;
+      width: 100%;
+      margin-left: -60px;
+      margin-top: 80px;
+      margin-bottom: 0px; }
       .experiencias .experiencia3 .textos3 h1 {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -769,16 +830,20 @@ footer {
   .experiencias {
     display: flex;
     flex-wrap: wrap;
-    align-items: center; }
+    justify-content: center; }
     .experiencias .experiencia1 {
       height: auto;
       display: grid;
       grid-template-columns: 55% 45%;
-      grid-template-areas: "imagen1 texto1"; }
+      grid-template-areas: "imagen1 texto1";
+      margin-top: 0px;
+      margin-bottom: 30px;
+      padding: 40px 0px; }
       .experiencias .experiencia1 .imagen1 {
         grid-area: imagen1; }
       .experiencias .experiencia1 .textos1 {
-        grid-area: texto1; }
+        grid-area: texto1;
+        padding: 30px 25px; }
         .experiencias .experiencia1 .textos1 h1 {
           margin-top: 20px;
           margin-bottom: 20px;
@@ -807,11 +872,15 @@ footer {
       height: auto;
       display: grid;
       grid-template-columns: 45% 55%;
-      grid-template-areas: "texto2 imagen2"; }
+      grid-template-areas: "texto2 imagen2";
+      margin-top: 0px;
+      margin-bottom: 30px;
+      padding: 40px 0px; }
       .experiencias .experiencia2 .imagen2 {
         grid-area: imagen2; }
       .experiencias .experiencia2 .textos2 {
-        grid-area: texto2; }
+        grid-area: texto2;
+        padding: 30px 25px; }
         .experiencias .experiencia2 .textos2 h1 {
           margin-top: 20px;
           margin-bottom: 20px;
@@ -840,11 +909,15 @@ footer {
       height: auto;
       display: grid;
       grid-template-columns: 55% 45%;
-      grid-template-areas: "imagen3 texto3"; }
+      grid-template-areas: "imagen3 texto3";
+      margin-top: 0px;
+      margin-bottom: 30px;
+      padding: 40px 0px; }
       .experiencias .experiencia3 .imagen3 {
         grid-area: imagen3; }
       .experiencias .experiencia3 .textos3 {
-        grid-area: texto3; }
+        grid-area: texto3;
+        padding: 30px 25px; }
         .experiencias .experiencia3 .textos3 h1 {
           margin-top: 20px;
           margin-bottom: 20px;
@@ -1002,6 +1075,10 @@ footer {
   /*----------------*/
   /*----ARTISTAS----*/
   /*----------------*/
+  .bannerArtistas {
+    height: 30vh; }
+    .bannerArtistas .titularArtistas {
+      left: 16%; }
   .artistas {
     display: grid;
     grid-template-columns: repeat(2, 50%); }
@@ -1014,6 +1091,10 @@ footer {
   /*----------------*/
   /*--EXPERIENCIAS--*/
   /*----------------*/
+  .bannerExperencia {
+    height: 30vh; }
+    .bannerExperencia .titularExperencia {
+      left: 8%; }
   .experiencias {
     margin: 0px 0px;
     flex-direction: column; }
@@ -1021,15 +1102,21 @@ footer {
       height: auto;
       display: grid;
       grid-template-columns: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "texto1"  "imagen1"; }
+      grid-template-rows: 50%;
+      grid-template-areas: "texto1"  "imagen1";
+      margin-top: 0px;
+      margin-bottom: 10px;
+      padding: 0px 0px; }
+      .experiencias .experiencia1 .imagen1 {
+        margin: 0px; }
       .experiencias .experiencia1 .textos1 {
         grid-area: texto1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 30px 0px; }
+        margin: 0px;
+        padding: 10px 0px; }
         .experiencias .experiencia1 .textos1 h1 {
           margin-top: 0px;
           margin-bottom: 20px;
@@ -1058,15 +1145,21 @@ footer {
       height: auto;
       display: grid;
       grid-template-columns: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "texto2" "imagen2"; }
+      grid-template-rows: 50%;
+      grid-template-areas: "texto2" "imagen2";
+      margin-top: 0px;
+      margin-bottom: 10px;
+      padding: 0px 0px; }
+      .experiencias .experiencia2 .imagen2 {
+        margin: 0px; }
       .experiencias .experiencia2 .textos2 {
         grid-area: texto2;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 30px 0px; }
+        margin: 0px;
+        padding: 10px 0px; }
         .experiencias .experiencia2 .textos2 h1 {
           margin-top: 0px;
           margin-bottom: 20px;
@@ -1095,15 +1188,21 @@ footer {
       height: auto;
       display: grid;
       grid-template-columns: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "texto3" "imagen3"; }
+      grid-template-rows: 50%;
+      grid-template-areas: "texto3" "imagen3";
+      margin-top: 0px;
+      margin-bottom: 10px;
+      padding: 0px 0px; }
+      .experiencias .experiencia3 .imagen3 {
+        margin: 0px; }
       .experiencias .experiencia3 .textos3 {
         grid-area: texto3;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 30px 0px; }
+        margin: 0px;
+        padding: 10px 0px; }
         .experiencias .experiencia3 .textos3 h1 {
           margin-top: 0px;
           margin-bottom: 20px;
