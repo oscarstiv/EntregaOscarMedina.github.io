@@ -60,7 +60,7 @@ body {
 /* Primera Seccion */
 .intro {
   height: 130vh;
-  background-image: url("../../images/background.svg");
+  background-image: url("../images/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -116,7 +116,7 @@ body {
   .lineup .carrusel {
     margin: 30px 0px; }
     .lineup .carrusel .carousel-inner .carousel-item {
-      background-image: url("../../images/background.svg");
+      background-image: url("../images/background.svg");
       background-repeat: no-repeat;
       background-size: cover;
       height: 550px;
@@ -490,7 +490,7 @@ body {
     position: relative; }
     .experiencias .experiencia1 .imagen1 {
       grid-area: imagen1;
-      background-image: url("../../images/experiencia-gastronomia.jpg");
+      background-image: url("../images/experiencia-gastronomia.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -543,7 +543,7 @@ body {
     position: relative; }
     .experiencias .experiencia2 .imagen2 {
       grid-area: imagen2;
-      background-image: url("../../images/experiencia-actividades.jpg");
+      background-image: url("../images/experiencia-actividades.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -597,7 +597,7 @@ body {
     position: relative; }
     .experiencias .experiencia3 .imagen3 {
       grid-area: imagen3;
-      background-image: url("../../images/experiencia-vassar.jpg");
+      background-image: url("../images/experiencia-vassar.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;

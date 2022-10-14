@@ -30,7 +30,7 @@
 /* Primera Seccion */
 .intro{
     height: 130vh;
-    background-image: url("../../images/background.svg");
+    background-image: url("../images/background.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -99,7 +99,7 @@
         margin: 30px 0px;
         .carousel-inner{
             .carousel-item{
-                background-image: url("../../images/background.svg");
+                background-image: url("../images/background.svg");
                 background-repeat: no-repeat;
                 background-size:cover;
                 height: 550px;
