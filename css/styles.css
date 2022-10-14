@@ -490,7 +490,7 @@ body {
     position: relative; }
     .experiencias .experiencia1 .imagen1 {
       grid-area: imagen1;
-      background-image: url("https://www.taquillalive.com/storage/2022/03/nosotros-1150X550.jpg");
+      background-image: url("../../images/experiencia-gastronomia.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -543,7 +543,7 @@ body {
     position: relative; }
     .experiencias .experiencia2 .imagen2 {
       grid-area: imagen2;
-      background-image: url("https://www.taquillalive.com/storage/2022/03/nosotros-1150X550.jpg");
+      background-image: url("../../images/experiencia-actividades.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -597,7 +597,7 @@ body {
     position: relative; }
     .experiencias .experiencia3 .imagen3 {
       grid-area: imagen3;
-      background-image: url("https://www.taquillalive.com/storage/2022/03/nosotros-1150X550.jpg");
+      background-image: url("../../images/experiencia-vassar.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -794,6 +794,17 @@ footer {
     .intro .hastag {
       margin-top: 10%;
       margin-bottom: 0px; }
+  .lineup .carrusel {
+    margin: 30px 0px; }
+    .lineup .carrusel .carousel-inner .carousel-item {
+      height: 400px; }
+      .lineup .carrusel .carousel-inner .carousel-item h3 {
+        font-size: 2rem;
+        margin-top: 0px;
+        margin-bottom: 30px; }
+      .lineup .carrusel .carousel-inner .carousel-item .textos img {
+        margin-top: 30px;
+        margin-bottom: 10px; }
   /* ---------------- */
   /* ----ARTISTAS---- */
   /* ---------------- */
@@ -1072,6 +1083,17 @@ footer {
     .intro .hastag {
       font-size: 1.3rem;
       margin-top: 60px; }
+  .lineup .carrusel {
+    margin: 30px 0px; }
+    .lineup .carrusel .carousel-inner .carousel-item {
+      height: 275px; }
+      .lineup .carrusel .carousel-inner .carousel-item h3 {
+        font-size: 1.5rem;
+        margin-top: 0px;
+        margin-bottom: 20px; }
+      .lineup .carrusel .carousel-inner .carousel-item .textos img {
+        margin-top: 30px;
+        margin-bottom: 10px; }
   /*----------------*/
   /*----ARTISTAS----*/
   /*----------------*/
